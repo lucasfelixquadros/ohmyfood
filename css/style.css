@@ -1,0 +1,435 @@
+/* HOMEPAGE */
+
+#spinner {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    z-index: 5000;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #9900ff;
+    border-top-color: #ff00ff;
+    animation: loading 1s linear infinite;
+    margin-top: 40%;
+}
+.hideLoading {
+    margin-left: 47%;
+    animation: hideMe 3s forwards;
+}
+@media screen and (max-width: 400px) {
+    .hideLoading {
+        margin-left: 40%;
+    }
+}
+
+@keyframes hideMe {
+    0%{
+        opacity: 1;
+    }
+    99.99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
+@keyframes hideAnimation {
+    to {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+header {
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+    min-width: 260px;
+}
+body {
+    width: 80%;
+    max-width: 920px;
+    background-color: rgba(221, 221, 221, 0.74);
+    margin: auto;
+    font-family: 'Shrikhand', bold;
+}
+
+.logo {
+    width: 140px;
+    margin: 20px auto 10px auto;
+}
+.location {
+    height: 30px;
+    text-align: center;
+}
+.h4Location {
+    color: rgb(97, 97, 97);
+    margin: 15px auto 15px auto;
+    font-size: 13px;
+    font-family: 'Shrikhand', sans-serif;
+}
+.fas {
+    margin-right: 10px;
+    color: grey;
+}
+.book {
+    text-align: center;
+    background-color: rgb(241, 240, 240);
+    padding:30px 20px;
+    min-width: 260px;
+}
+.h4Book {
+    margin-top: 50px;
+}
+h3 {
+    margin: 0px;
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 18px;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;  
+    font-size: 15px;
+}
+.buttonExplore {
+    background:    #ff00ff;
+    background:    linear-gradient(#ff00ff, #9900ff);
+    border:        0px solid #556699;
+    border-radius: 1000px;
+    width:         170px;
+    height:        40px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          "Ubuntu", sans-serif;
+    text-align:    center;
+    margin:        40px auto;
+    display:       block;
+}
+.howWorks {
+    background: white;
+    padding: 25px;
+    width: 440px;
+    min-width: 260px;
+}
+@media screen and (max-width: 830px) {
+    .howWorks {
+        max-width: 270px;
+    }
+    .book {
+        max-width: 270px;
+    }
+    
+}
+.howWorksSteps {
+    width: 240px;
+    margin: 20px auto 20px auto;
+    height: 60px;
+    background-color: rgb(241, 240, 240);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(214, 214, 214);
+}
+.howWorksSteps:hover {
+    background-color: #e6dff3;
+}
+.h3WIW {
+    font-size: 13px;
+    color: black;
+    margin-left: 40px;
+    padding-top: 10%;
+    position: absolute;
+}
+.hiwIcon {
+    margin-right: 15px;
+}
+.stepNumber {
+    position: absolute;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -7px;
+    margin-top: 25px;
+    background-color: #9356DC;
+}
+.stepNumberH4 {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.restaurants {
+    background-color: rgb(241, 240, 240);
+    padding: 20px 20px 50px 20px;
+    max-width: 890px;
+}
+.h3Square {
+    margin: 5px 0px 0px 10px;
+    font-size: 13px;
+}
+a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-style: none;
+}
+a:link {
+    text-decoration: none;
+}
+.restaurants h4 {
+    font-family: 'Roboto', sans-serif; 
+    margin: 3px 0px 10px 10px;
+    font-size: 13px;
+}
+.tittle {
+    margin: 20px 0px 20px 10px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.restaurantsSquare {
+    height: 170px;
+    max-height: 170px;
+    max-width: 230px;
+    min-width: 230px;
+    background-color: white;
+    margin-top: 13px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgb(233, 233, 233);
+    position: relative;
+    margin-right: 10px;
+}
+.restaurantImg {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 122px;
+}
+.resTittle {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.newTag {
+    position: absolute;
+    float: right;
+    right: 10px;
+    margin-top: -118px;
+    z-index: 2000;
+    background-color: rgb(163, 218, 204);
+    width: 55px;
+    height: 18px;
+    text-align: center;
+}
+.newH5 {
+    color: rgb(22, 138, 109);
+    margin: 3px auto;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bolder;
+    font-size: 10px;
+}
+.fa-heart {
+    color: black;
+    float: right;
+    margin-top: -35px;
+    margin-right: 15px;
+}
+.fa-heart:hover {
+    color: #9356DC   ;
+}
+.f1 {
+    font-size: 19px;
+}
+.f2 {
+    color: white;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+footer {
+    height: 120px;
+    min-width: 260px;
+    background-color: rgb(43, 43, 43);
+    padding-top: 15px;
+    
+}
+.ohmyfoodh4 {
+    font-family: 'Shrikhand', bold;
+    color: white;
+    font-style: italic;
+    font-style: bold;
+    margin: 0px 0px 15px 15px;
+    position: static;
+}
+.topics {
+    font-size: 10px;
+    margin: 0px 0px 5px 15px;
+    color: white;
+}
+.faFooter {
+    color: white;
+    margin: 0px;
+    margin-right: 7px;
+    font-size: 9px;
+}
+.fa-utensils {
+    margin-right: 11px;
+}
+
+/* MENU LA FRANCAISE  */
+
+.fa-arrow-left {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    margin-left: -55px;
+    top: 22px;
+}
+
+.menuImg {
+    min-width: 312px;
+    max-width: 312px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.menuImgDiv {
+    min-width: 260px;  
+    background-color: rgb(212, 212, 212);
+
+}
+.menuBox {
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-top: -40px;
+    min-width: 260px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+}
+.menuName {
+    padding-top: 50px;
+    margin-left: 20px;
+}
+.entrees {
+    min-width: 260px;
+    margin-bottom: 20px;
+}
+.mains {
+    min-width: 260px;
+    margin-bottom: 20px;
+}
+.desserts {
+    min-width: 260px;
+    margin-bottom: 20px;
+}
+.menuItem {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 65px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(214, 214, 214);
+}
+
+.a1 {
+    animation: 4s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.a2 {
+    animation: 6s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;    
+}
+.a3 {
+    animation: 8s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.h3MenuItem {
+    font-size: 12px;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+.h5MenuItem {
+    font-size: 11px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif; 
+}
+.menuSteps {
+    font-family: 'Roboto', sans-serif; 
+}
+.hrGreen {
+    border-color: rgb(76, 226, 181);
+    width: 50px;
+    margin-right: 90%;
+}
+@media (hover:hover) {
+    .selected:hover {
+        display: block;
+    }
+    .price:hover {
+        margin-right: 30px;
+    }
+}
+.selected {
+    background-color: rgb(24, 218, 176);
+    width: 30px;
+    height: 63px;
+    position: relative;
+    float: right;
+    margin-top: -93px;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.price {
+    background-color: white;
+    width: 40px;
+    height: 63px;
+    float: right;
+    margin-top: -93px;
+    position: relative;
+    z-index: 5;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.itemPrice {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.orderButton {
+    background:    #ff00ff;
+    background:    linear-gradient(#ff00ff, #9900ff);
+    border:        0px solid #556699;
+    border-radius: 1000px;
+    width:         120px;
+    height:        30px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          "Ubuntu", sans-serif;
+    text-align:    center;
+    margin:        40px auto;
+    display:       block;
+}
