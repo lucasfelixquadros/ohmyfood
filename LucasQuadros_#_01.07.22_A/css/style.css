@@ -338,6 +338,33 @@ footer {
     margin-top: 10px;
     box-shadow: 1px 1px 1px 1px rgb(214, 214, 214);
 }
+
+.a1 {
+    animation: 4s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.a2 {
+    animation: 6s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;    
+}
+.a3 {
+    animation: 8s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .h3MenuItem {
     font-size: 12px;
     padding-top: 15px;
