@@ -56,7 +56,7 @@ header {
 }
 body {
     width: 80%;
-    max-width: 920px;
+    max-width: 890px;
     background-color: rgba(221, 221, 221, 0.74);
     margin: auto;
     font-family: 'Shrikhand', bold;
@@ -107,7 +107,7 @@ h4 {
     height:        40px;
     color:         #ffffff;
     display:       inline-block;
-    font:          "Ubuntu", sans-serif;
+    font-family:          'Shrikhand', sans-serif;
     text-align:    center;
     margin:        40px auto;
     display:       block;
@@ -176,7 +176,7 @@ h4 {
 a:visited {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-style: none;
+    /* font-style: none; */
 }
 a:link {
     text-decoration: none;
@@ -263,7 +263,6 @@ footer {
     font-family: 'Shrikhand', bold;
     color: white;
     font-style: italic;
-    font-style: bold;
     margin: 0px 0px 15px 15px;
     position: static;
 }
@@ -354,6 +353,11 @@ footer {
     animation-fill-mode: forwards;
     visibility: hidden;
 }
+.a4 {
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
 
 @keyframes fadeIn {
     0% {
@@ -361,8 +365,17 @@ footer {
     }
     100% {
         visibility: visible;
-        opacity: 1;
+        opacity: 9;
     }
+}
+
+/* BODY DELAY */
+
+.delayLoad{
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 4s;
 }
 
 .h3MenuItem {
@@ -428,7 +441,7 @@ footer {
     height:        30px;
     color:         #ffffff;
     display:       inline-block;
-    font:          "Ubuntu", sans-serif;
+    font-family:   'sans-serif';
     text-align:    center;
     margin:        40px auto;
     display:       block;
